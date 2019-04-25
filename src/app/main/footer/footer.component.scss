@@ -1,0 +1,21 @@
+@import '../../../assets/variables';
+
+.footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    margin: 0 5vw;
+
+    i {
+      &:hover {
+        filter: invert(0.8);
+        transition: 0.5s;
+      }
+    }
+  }
+}

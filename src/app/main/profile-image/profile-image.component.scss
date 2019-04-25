@@ -1,0 +1,20 @@
+.profile-image {
+  width: 30%;
+  border-radius: 50%;
+  animation: loadImage 3s ease-in forwards;
+  display: inline-flex;
+}
+
+@keyframes loadImage {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+}

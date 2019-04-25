@@ -1,0 +1,11 @@
+app-main {
+  z-index: 10;
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+  left: 25%;
+}
+
+app-background {
+  z-index: 1;
+}

@@ -1,0 +1,25 @@
+.portfolio-text {
+  width: 60%;
+  margin-left: 10%;
+  display: inline-flex;
+  position: absolute;
+  animation: loadText 3.5s ease-in forwards;
+  font-size: 1.5em;
+}
+
+
+
+
+@keyframes loadText {
+  0% {
+    opacity: 0;
+  }
+
+  57% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+}

@@ -1,0 +1,58 @@
+app-footer {
+  position: absolute;
+  bottom: 2%;
+}
+
+main {
+  margin-top: 2%;
+  justify-content: center;
+
+  .logo-svg {
+    display: block;
+    margin: auto;
+    width: 25%;
+    stroke: black;
+  }
+
+  .logo-line {
+    animation: lineAnimation 1s ease-in forwards;
+    border: 2px solid black;
+  }
+
+  h1 {
+    font-weight: 100;
+    font-size: 2.5vw;
+    margin: auto;
+    width: fit-content;
+    user-select: none;
+    animation: nameAnimation 2s ease-in forwards;
+  }
+
+  .information-container {
+    display: inline;
+  }
+}
+
+@keyframes lineAnimation {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes nameAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+}
