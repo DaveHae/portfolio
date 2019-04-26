@@ -12,6 +12,7 @@ main {
     margin: auto;
     width: 25%;
     stroke: black;
+    animation: startingAnimation 0.5s ease-in forwards;
   }
 
   .logo-line {
@@ -49,6 +50,16 @@ main {
   }
 
   50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+}
+
+@keyframes startingAnimation {
+  0% {
     opacity: 0;
   }
 
