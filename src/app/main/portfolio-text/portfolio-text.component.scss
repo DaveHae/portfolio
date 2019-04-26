@@ -5,6 +5,8 @@
   position: absolute;
   animation: loadText 3.5s ease-in forwards;
   font-size: 1.5em;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 @keyframes loadText {

@@ -1,8 +1,31 @@
-.profile-image {
-  width: 30%;
-  border-radius: 50%;
+.zoom-effect-container {
+  overflow: hidden;
+  margin: 0 auto;
   animation: loadImage 3s ease-in forwards;
   display: inline-flex;
+  position: relative;
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+
+  &:hover .image-card .profile-image {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+  }
+
+  .image-card {
+    position: absolute;
+
+
+
+    .profile-image {
+      width: 100%;
+      filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.5));
+
+      -webkit-transition: 0.4s ease;
+      transition: 0.4s ease;
+    }
+  }
 }
 
 @keyframes loadImage {
