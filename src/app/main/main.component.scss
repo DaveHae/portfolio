@@ -1,6 +1,13 @@
 app-footer {
   position: absolute;
-  bottom: 2%;
+  bottom: 2vh;
+  display: flex;
+  margin: auto;
+  width: 100%;
+
+  @media only screen and (max-width: 960px) {
+    bottom: 1;
+  }
 }
 
 main {
@@ -27,10 +34,26 @@ main {
     width: fit-content;
     user-select: none;
     animation: nameAnimation 2s ease-in forwards;
+
+    @media only screen and (max-width: 960px) {
+      font-size: 5vw;
+    }
   }
 
   .information-container {
     display: inline;
+
+    app-profile-image {
+      @media only screen and (max-width: 960px) {
+        align-items: center;
+        margin: 2% auto;
+      }
+    }
+
+    @media only screen and (max-width: 960px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 

@@ -4,28 +4,28 @@
   animation: loadImage 3s ease-in forwards;
   display: inline-flex;
   position: relative;
-  width: 30%;
-  height: 30%;
+  width: 200px;
+  height: 200px;
+  max-width: 100%;
   border-radius: 50%;
 
-  &:hover .image-card .profile-image {
+  @media only screen and (max-width: 960px) {
+    align-self: center;
+  }
+
+  &:hover .profile-image {
     -webkit-transform: scale(1.08);
     transform: scale(1.08);
   }
 
-  .image-card {
-    position: absolute;
+  .profile-image {
+    max-width: 100%;
+    filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.5));
 
-
-
-    .profile-image {
-      width: 100%;
-      filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.5));
-
-      -webkit-transition: 0.4s ease;
-      transition: 0.4s ease;
-    }
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
   }
+
 }
 
 @keyframes loadImage {

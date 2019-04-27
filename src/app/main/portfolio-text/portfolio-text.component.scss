@@ -7,6 +7,13 @@
   font-size: 1.5em;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+  @media only screen and (max-width: 960px) {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    font-size: 1.2em;
+  }
 }
 
 @keyframes loadText {
