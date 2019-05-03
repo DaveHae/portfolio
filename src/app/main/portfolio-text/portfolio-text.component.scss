@@ -1,3 +1,5 @@
+@import '../../../assets/variables';
+
 .portfolio-text {
   width: 60%;
   margin-left: 10%;
@@ -5,7 +7,7 @@
   position: absolute;
   animation: loadText 3.5s ease-in forwards;
   font-size: 1.5em;
-  color: white;
+  color: $font;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
   @media only screen and (max-width: 960px) {

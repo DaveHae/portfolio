@@ -1,3 +1,5 @@
+@import '../../assets/variables';
+
 app-footer {
   position: absolute;
   bottom: 2vh;
@@ -18,13 +20,13 @@ main {
     display: block;
     margin: auto;
     width: 25%;
-    stroke: black;
+    stroke: $font;
     animation: startingAnimation 0.5s ease-in forwards;
   }
 
   .logo-line {
     animation: lineAnimation 1s ease-in forwards;
-    border: 2px solid black;
+    border: 2px solid $font;
   }
 
   h1 {
@@ -33,6 +35,7 @@ main {
     margin: auto;
     width: fit-content;
     user-select: none;
+    color: $font;
     animation: nameAnimation 2s ease-in forwards;
 
     @media only screen and (max-width: 960px) {

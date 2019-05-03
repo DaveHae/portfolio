@@ -14,8 +14,15 @@
   }
 
   &:hover .profile-image {
-    -webkit-transform: scale(1.08);
-    transform: scale(1.08);
+
+    -webkit-backface-visibility: hidden;
+    -ms-transform: translateZ(0);
+    /* IE 9 */
+    -webkit-transform: translateZ(0);
+    /* Chrome, Safari, Opera */
+    transform: translateZ(0);
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
   }
 
   .profile-image {
